@@ -3,7 +3,7 @@ import { useAuth } from "../../hooks/useAuth";
 
 const Dashboard = () => {
     const navigate = useNavigate();
-    const { logout } = useAuth();
+    const { user, logout } = useAuth();
 
     const handleLogout = () => {
         localStorage.removeItem("user");
