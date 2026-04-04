@@ -14,7 +14,8 @@ const Dashboard = () => {
     return (
         <div>
             <h1>Dashboard</h1>
-            <p>Welcome to LMS</p>
+            <h2>Welcome to LMS {user?.name }</h2>
+            <p>Email: {user?.email}</p>
             <button onClick={handleLogout}>Logout</button>
         </div>
     );
