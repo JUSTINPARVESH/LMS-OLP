@@ -30,11 +30,11 @@ const Login = () => {
 
             <form onSubmit={handleSubmit}>
 
-                <input type ="email" placeholder ="email"
+                <input type ="email" placeholder ="Enter your email" autoComplete="off"
                 onChange={(e) =>setForm({...form, email:e.target.value})}
                 />
 
-                <input type ="password" placeholder ="password"
+                <input type ="password" placeholder ="Enter your password" autoComplete="off"
                 onChange={(e) =>setForm({...form,password:e.target.value})}
                 />
 
